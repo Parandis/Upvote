@@ -1,0 +1,67 @@
+/* Container for the entire application */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+/* Upvote Style */
+
+/* Common style for the upvote container */
+.upvote {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 5px;
+}
+  
+ /* Default (not-selected) state */
+.upvote.default {
+    background-color: #F4F6F8;
+}
+  
+/* Selected state */
+.upvote.selected {
+    background-color: #E5E8FD;
+}
+  
+/* Arrow color for default (not-selected) state */
+.upvote.default .arrow {
+    fill: #343A40;
+}
+  
+/* Arrow color for selected state */
+.upvote.selected .arrow {
+    fill: #253CF2;
+}
+  
+/* Upvote List Style */
+  
+/* Container for a list of upvote buttons */
+.upvote-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+/* Style for the "Add Upvote" button */
+.add-upvote-button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+  
+/* Container for all upvote lists */
+.upvote-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+  
