@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+## Instructions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1 - Start a new React project using JavaScript or TypeScript. 
 
-## Available Scripts
+2 - All components should be reusable, meaning, they should not be made limited just for this implementation
 
-In the project directory, you can run:
+3 - Feel free to use the provided SVG files or your own similar icons
 
-### `npm start`
+4 - Create the upvote component capable to show two states.
+- It has the default (not-selected) and the selected states:
+- Default background color #F4F6F8 with arrow #343A40
+- Selected background color #E5E8FD with arrow #253CF2
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+represent the different groups. Use the same state colours for all lists as mentioned above.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+5 - Create the upvotes list
+- It toggles the current selection state for all the upvote components in the list through the upvote click
+- The selection from a list should not interfere with the selection from any other lists
+- Allow adding more upvotes to the list by clicking on the add button
 
-### `npm test`
+6 - Wireframe
+- The  +  button should add one new upvote to its own list
+- Any newly added upvote should be linked to the same state as the other upvotes in the list
+- The colour of the upvote is only a visual representation of their shared state. Your final product should not have multiple colours, only the selected and default states.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7 - Data
+- Use React context, a hook or any way where the data state can be managed for all upvote lists together
+- Make the data persisted in the browser and allow to show all upvotes with their states when refreshing the page
 
-### `npm run build`
+8 - Provide one test for selection change based on the click event
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+9 - Take the opportunity to demonstrate the code consistency that you apply on your own job on a daily basis
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
